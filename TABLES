@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+int x,i,y,r;
+printf("enter nth table");
+
+scanf("%d",&x);
+printf("enter nth table");
+scanf("%d",&y); 
+printf("here the result of table %d",x);
+for (i=1;i<=y;i++)
+{
+	r=x*i;
+	printf("\n%dx%d=%d",x,i,r);
+	
+	}
+	getch();	
+}
