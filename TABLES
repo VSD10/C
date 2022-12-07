@@ -4,7 +4,6 @@ main()
 {
 int x,i,y,r;
 printf("enter nth table");
-
 scanf("%d",&x);
 printf("enter nth table");
 scanf("%d",&y); 
