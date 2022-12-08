@@ -1,0 +1,27 @@
+#include<stdio.h>
+main()
+{
+int a;
+printf("enter a consume units :");
+scanf("%d",&a);
+if(a<=100)
+{
+a=a*1.5;
+printf("price ::%d",a);
+}
+else if(a>100 && a<=200)
+{
+a=100*1.5+(a-100)*2;
+printf("price ::%d",a);
+}
+else if(a>200 && a<=300)
+{
+a=100*1.5+(100*2)+(a-200)*2.5;
+printf("price ::%d",a);
+}
+else if(a>300 && a<=400)
+{
+a=100*1.5+(100*2)+(100*2.5)+(a-300)*3;
+printf("price ::%d",a);
+}
+}
