@@ -1,0 +1,64 @@
+#include<stdio.h>
+main()
+{
+int a,b,c=1,with,bal=1000,send,dep;
+char acc[50];
+
+
+while(c==1)
+{
+
+printf("\t\t\t\tWELCOME TO VSD BANK OF ASGARD");
+printf("\n\n\n Select the services ");
+printf("\n1.Balance enquiry\n2.Cash Withdraw\n3.Cash Deposit\n4.Money Transfer");
+scanf("%d",&a);
+switch(a)
+{
+case 1:
+            printf("\t\t\t\t BALANCE ENQUIRY:");
+            printf("\n\nyour current balance is : %d",bal);
+            break;
+
+case 2:
+           printf("\t\t\tCash withdraw");
+           printf("\n\nEnter a amount ");
+           scanf("%d",&with);
+           bal-=with;
+           printf("\n\tYOU HAVE SUCCESFULLY WITHDRAWED Rs.%d FROM YOU ACCOUNT",with);
+            break;
+
+case 3:
+    
+          printf("\n\t\t\tCASH DEPOSIT");
+           printf("\n\nEnter a Amount ");
+            scanf("%d",&dep);
+            bal+=dep;
+            printf("You have succesfully deposited Rs.%d in you account");
+          break;
+
+case 4:
+
+
+            printf("\n\t\t\t\t MONEY TRANSFER");
+            printf("\n\nenter a UPI ID of receiver:");
+            scanf("%s",acc);
+            printf("\n\nenter a amount:");
+            scanf("%d",b);
+              
+            bal-=b;
+            printf("Succesfully  transfered Rs.%d to  %s",b,acc);
+             break;
+}    
+c=0;
+printf("WOULD YOU LIKE TO REPEAT?");
+printf("1.Yes \n2.NO");
+scanf("%d",c);
+}
+printf("\n\n\t\tTHANKS FOR BANKING WITH US");
+printf("SEE YOU SOON AGAIN ");
+printf("\t\t\t\t\t\BY\n\t\t\t\tVSD");
+
+
+
+
+}
