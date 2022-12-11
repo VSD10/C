@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
 int a,b,c=1,with,bal=1000,send,dep;
 char acc[50];
@@ -52,11 +52,11 @@ case 4:
 c=0;
 printf("WOULD YOU LIKE TO REPEAT?");
 printf("1.Yes \n2.NO");
-scanf("%d",c);
+scanf("%d",&c);
 }
 printf("\n\n\t\tTHANKS FOR BANKING WITH US");
 printf("SEE YOU SOON AGAIN ");
-printf("\t\t\t\t\t\BY\n\t\t\t\tVSD");
+printf("\t\t\t\tBY\n\t\t\t\tVSD");
 
 
 
